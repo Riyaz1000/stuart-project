@@ -80,6 +80,8 @@ export const movieUpdate = async (req, res) => {
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
+
+  console.log(req.body);
 };
 
 // delete
